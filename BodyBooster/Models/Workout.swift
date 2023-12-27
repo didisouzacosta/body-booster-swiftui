@@ -9,7 +9,7 @@ import Foundation
 
 struct Workout: Identifiable, Codable, Hashable {
     let id = UUID()
-    let title: String
+    var title: String
     let image: URL
     
     var sets: [Workout.Set]
@@ -26,17 +26,16 @@ extension Workout {
     
     struct Set: Codable, Hashable, Identifiable {
         let id = UUID()
-        let repetitions: String
+        var repetitions: String
         let weight: String?
         let rest: Int?
         
-        var status: Set.Status?
+        var status: Status = .toDo
         
         enum CodingKeys: CodingKey {
             case repetitions
             case weight
             case rest
-            case status
         }
     }
     
@@ -45,7 +44,7 @@ extension Workout {
 extension Workout.Set {
     
     enum Status: String, Codable {
-        case todo
+        case toDo
         case doing
         case done
     }

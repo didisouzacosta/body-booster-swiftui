@@ -10,26 +10,22 @@
                     {
                         "repetitions": "15x",
                         "weight": "40",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "12x",
                         "weight": "45",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "10x",
                         "weight": "50",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "8x",
                         "weight": "55",
-                        "rest": 1,
-                        "status": "doing"
+                        "rest": 1
                     }
                 ]
             },
@@ -40,26 +36,22 @@
                     {
                         "repetitions": "10x",
                         "weight": "50",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "10x",
                         "weight": "50",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "10x",
                         "weight": "50",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "10x",
                         "weight": "50",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     }
                 ]
             },
@@ -70,14 +62,12 @@
                     {
                         "repetitions": "6+8x",
                         "weight": "50/40",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "6+8x",
                         "weight": "50/40",
-                        "rest": 1,
-                        "status": "doing"
+                        "rest": 1
                     },
                     {
                         "repetitions": "6+8x",
@@ -93,8 +83,7 @@
                     {
                         "repetitions": "12x",
                         "weight": "30",
-                        "rest": 1,
-                        "status": "doing"
+                        "rest": 1
                     },
                     {
                         "repetitions": "12x",
@@ -115,8 +104,7 @@
                     {
                         "repetitions": "15x",
                         "weight": "18",
-                        "rest": 1,
-                        "status": "doing"
+                        "rest": 1
                     },
                     {
                         "repetitions": "15x",
@@ -142,8 +130,7 @@
                     {
                         "repetitions": "12x",
                         "weight": "7",
-                        "rest": 1,
-                        "status": "doing"
+                        "rest": 1
                     },
                     {
                         "repetitions": "12x",
@@ -626,20 +613,17 @@
                     {
                         "repetitions": "1min",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "1min",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "1min",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     }
                 ]
             },
@@ -650,20 +634,17 @@
                     {
                         "repetitions": "20x",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "20x",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "20x",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     }
                 ]
             },
@@ -674,14 +655,12 @@
                     {
                         "repetitions": "15x",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "15x",
                         "weight": "0",
-                        "rest": 1,
-                        "status": "done"
+                        "rest": 1
                     },
                     {
                         "repetitions": "15x",

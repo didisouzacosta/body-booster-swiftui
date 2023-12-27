@@ -12,3 +12,17 @@ enum DataState<T, E: Error> {
     case loaded(T)
     case failure(E)
 }
+
+extension DataState {
+    
+    var value: T? {
+        get throws {
+            switch self {
+            case .failure(let error): throw error
+            case .loading: nil
+            case .loaded(let data): data
+            }
+        }
+    }
+    
+}

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Training: Codable, Identifiable, Equatable, Hashable {
+struct Training: Codable, Identifiable, Hashable {
     let id = UUID()
     let title: String
     let weekDays: [Int]
@@ -18,9 +18,5 @@ struct Training: Codable, Identifiable, Equatable, Hashable {
         case title
         case weekDays
         case workouts
-    }
-    
-    static func == (lhs: Training, rhs: Training) -> Bool {
-        lhs.id == rhs.id
     }
 }

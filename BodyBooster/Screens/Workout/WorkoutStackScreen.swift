@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct WorkoutStackScreen: View {
+    @Environment(TrainingStore.self) private var trainingStore
     
-    let workout: Workout
+    let identifier: any Identifiable<UUID>
     
     private let router = WorkoutRouter()
     
     var body: some View {
         Navigator(router: router) {
-            WorkoutScreen(workout: workout)
+            WorkoutScreen(identifier: identifier)
         }
         .environment(router)
     }
 }
 
 #Preview {
-    WorkoutStackScreen(
-        workout: fakeTrainings[0].workouts[0]
-    )
+    WorkoutStackScreen(identifier: fakeTrainings[0].workouts[0])
+        .environment(TrainingStore.preview)
 }

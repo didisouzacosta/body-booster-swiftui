@@ -8,22 +8,39 @@
 import SwiftUI
 
 struct TrainingScreen: View {
-    @Environment(MainRouter.self) var router
+    @Environment(TrainingStore.self) private var trainingStore
+    @Environment(MainRouter.self) private var router
     
-    let training: Training
+    let identifier: any Identifiable<UUID>
+    
+    private var training: Training? {
+        try? trainingStore.getTraining(from: identifier)
+    }
+    
+    private var title: String {
+        training?.title ?? ""
+    }
+    
+    private var weekDays: [Int] {
+        training?.weekDays ?? []
+    }
+    
+    private var workouts: [Workout] {
+        training?.workouts ?? []
+    }
     
     var body: some View {
         List {
             Section {
                 TrainingHeader(
-                    title: training.title,
-                    weekDays: training.weekDays
+                    title: title,
+                    weekDays: weekDays
                 )
             }
             .minimalSection()
             
             Section {
-                ForEach(Array(training.workouts.enumerated()), id: \.offset) { index, workout in
+                ForEach(Array(workouts.enumerated()), id: \.offset) { index, workout in
                     TouchableButton(content: {
                         TrainingListItem(index: index, workout: workout)
                     }) {
@@ -40,6 +57,7 @@ struct TrainingScreen: View {
 
 
 #Preview {
-    TrainingScreen(training: fakeTrainings[0])
+    TrainingScreen(identifier: fakeTrainings[0])
+        .environment(TrainingStore.preview)
         .environment(MainRouter())
 }

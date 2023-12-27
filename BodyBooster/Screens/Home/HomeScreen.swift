@@ -12,7 +12,7 @@ struct HomeScreen: View {
     @Environment(TrainingStore.self) private var trainingStore
     
     var body: some View {
-        HomeList(trainings: trainingStore.trainings) { training in
+        HomeList(trainings: trainingStore.data) { training in
             router.navigate(to: .training(training))
         }
         .navigationTitle("")

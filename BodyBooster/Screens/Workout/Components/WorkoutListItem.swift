@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct WorkoutListItem: View {
-    let set: Workout.Set
+    var set: Workout.Set
     let action: () -> Void
+    
+    private var scale: CGFloat {
+        self.set.status == .toDo ? 0.9 : 1
+    }
     
     var body: some View {
         TouchableButton(content: {
@@ -41,8 +45,9 @@ struct WorkoutListItem: View {
             .rounded()
         }, action: action)
         .padding(-4)
-        .scaleEffect(0.9)
-        .opacity(0.6)
+        .scaleEffect(scale)
+//        .opacity(0.6)
+        .animation(.easeIn, value: scale)
     }
 }
 

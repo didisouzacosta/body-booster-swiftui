@@ -22,8 +22,8 @@ enum MainRoute: RouteRepresentable {
     
     @ViewBuilder func content() -> some View {
         switch self {
-        case .training(let training): TrainingScreen(training: training)
-        case .workout(let workout): WorkoutStackScreen(workout: workout)
+        case .training(let identifier): TrainingScreen(identifier: identifier)
+        case .workout(let identifier): WorkoutStackScreen(identifier: identifier)
         }
     }
 }
