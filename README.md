@@ -1,2 +1,2 @@
-# body-booster-swiftui
+# BodyBooster SwiftUI
 Workout app made in SwiftUI
