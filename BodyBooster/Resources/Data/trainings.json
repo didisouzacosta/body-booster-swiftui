@@ -1,28 +1,34 @@
 [
     {
+        "id": "20af2498-3630-4a47-841d-503413325a3d",
         "title": "Ombro e Peito",
         "weekDays": [1, 4],
         "workouts": [
             {
+                "id": "22424e71-90a4-4eee-8aa7-6ad571c29a89",
                 "title": "Puxador Articulado",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "b21b87c6-6519-4e3c-9cc1-b91438fbd815",
                         "repetitions": "15x",
                         "weight": "40",
                         "rest": 1
                     },
                     {
+                        "id": "1c7b105b-df47-459c-baec-c4a8f0138274",
                         "repetitions": "12x",
                         "weight": "45",
                         "rest": 1
                     },
                     {
+                        "id": "b1cd1ad3-a594-4f3b-8063-6b7b3806be19",
                         "repetitions": "10x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
+                        "id": "91ede3eb-7d78-4045-8373-1ae7a3cbe2e8",
                         "repetitions": "8x",
                         "weight": "55",
                         "rest": 1
@@ -30,25 +36,30 @@
                 ]
             },
             {
+                "id": "63676168-a3af-4872-8c63-ff797640dfb9",
                 "title": "Remada Baixa Estribo",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "4b8f087f-40de-4fe7-81cf-c7557acce49c",
+                        "repetitions": "10x",
+                        "weight": "50",
+                        "rest": 6
+                    },
+                    {
+                        "id": "9b6e9869-b440-49bf-88f7-14984cf8c112",
                         "repetitions": "10x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
+                        "id": "fdc31a79-b8c2-4d35-b5ce-50a2e0f8db69",
                         "repetitions": "10x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
-                        "repetitions": "10x",
-                        "weight": "50",
-                        "rest": 1
-                    },
-                    {
+                        "id": "db33e1aa-bf0b-4a8d-a37d-df7decb7ddf3",
                         "repetitions": "10x",
                         "weight": "50",
                         "rest": 1
@@ -56,20 +67,24 @@
                 ]
             },
             {
+                "id": "950d9b05-8a6c-4a07-8242-16167b7b1c6f",
                 "title": "Puxador Triângulo Drop Set",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "e5832218-e5dc-41c2-bf16-7c0108fda371",
                         "repetitions": "6+8x",
                         "weight": "50/40",
                         "rest": 1
                     },
                     {
+                        "id": "055d1b94-ffb3-48c3-8076-e04475a7a11e",
                         "repetitions": "6+8x",
                         "weight": "50/40",
                         "rest": 1
                     },
                     {
+                        "id": "efd2f20c-629b-4dd7-9eb0-772434fd4da7",
                         "repetitions": "6+8x",
                         "weight": "50/40",
                         "rest": 1
@@ -77,20 +92,24 @@
                 ]
             },
             {
+                "id": "43079767-ea0d-4701-a808-986a851c6565",
                 "title": "Remada Alta Pulley",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "b6a2b983-964c-43f2-9913-86d58773d899",
                         "repetitions": "12x",
                         "weight": "30",
                         "rest": 1
                     },
                     {
+                        "id": "1fcab4fa-4d32-4325-b9ee-33ef52797be7",
                         "repetitions": "12x",
                         "weight": "30",
                         "rest": 1
                     },
                     {
+                        "id": "661c5bdb-dbe9-4998-a3d7-61ee0f0e3d17",
                         "repetitions": "12x",
                         "weight": "30",
                         "rest": 1
@@ -98,25 +117,30 @@
                 ]
             },
             {
+                "id": "c9d732e8-0503-40fa-8a87-a13182e59520",
                 "title": "Encolhimento Com Halteres",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "4fd8b891-4733-4a9a-9cf7-8255b0f49cc1",
                         "repetitions": "15x",
                         "weight": "18",
                         "rest": 1
                     },
                     {
+                        "id": "bf3fd26b-bee1-4398-b05a-925ffb383863",
                         "repetitions": "15x",
                         "weight": "18",
                         "rest": 1
                     },
                     {
+                        "id": "726826c7-b975-4011-a926-714403fda933",
                         "repetitions": "15x",
                         "weight": "18",
                         "rest": 1
                     },
                     {
+                        "id": "eae95dee-e901-4ec1-ad70-67fc0ada423f",
                         "repetitions": "15x",
                         "weight": "18",
                         "rest": 1
@@ -124,25 +148,30 @@
                 ]
             },
             {
+                "id": "1b479738-6c90-4bf8-9a0d-0f7694928970",
                 "title": "Rosca Direta Com Barra Reta",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "fa35472a-1da5-4f44-bd75-387b9ba51cb7",
                         "repetitions": "12x",
                         "weight": "7",
                         "rest": 1
                     },
                     {
+                        "id": "f8ca041e-7276-4d14-b700-38f055fff67a",
                         "repetitions": "12x",
                         "weight": "7",
                         "rest": 1
                     },
                     {
+                        "id": "6fa46122-6950-476d-8752-776844419d38",
                         "repetitions": "12x",
                         "weight": "7",
                         "rest": 1
                     },
                     {
+                        "id": "a0825811-ee60-48b9-b1f2-ee6be2751af2",
                         "repetitions": "12x",
                         "weight": "7",
                         "rest": 1
@@ -150,20 +179,24 @@
                 ]
             },
             {
+                "id": "df86a242-437e-4699-ac09-7e76ad0920b3",
                 "title": "Rosca Martelo",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "67c3d192-f592-48cc-96d0-ddfcb214f141",
                         "repetitions": "10x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "03a1bea0-0152-4b8c-85cf-07f17205786a",
                         "repetitions": "10x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "6291b195-d402-41d3-bfe1-f80c7586cfbc",
                         "repetitions": "10x",
                         "weight": "15",
                         "rest": 1
@@ -171,20 +204,24 @@
                 ]
             },
             {
+                "id": "ab228a8a-d575-478b-8f21-c203e47f4d7c",
                 "title": "Rosca Inversa Pully",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "8a787576-84ac-4c1b-ac1b-57972de3085c",
                         "repetitions": "12x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "49cf833e-e3b3-4f37-9fb1-b6b1e34e015b",
                         "repetitions": "12x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "18be7ab3-787f-4868-ba2e-0ff22ef708f6",
                         "repetitions": "12x",
                         "weight": "15",
                         "rest": 1
@@ -194,29 +231,35 @@
         ]
     },
     {
+        "id": "fcec0145-67ed-4bdf-9adf-2bc40e8d8453",
         "title": "Inferiores",
         "weekDays": [2, 5],
         "workouts": [
             {
+                "id": "4d7e1a9a-7178-4aaf-8265-792a6adbc194",
                 "title": "Agachamento Livre",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "807ed60d-0172-4bff-b0b8-a5f013220897",
                         "repetitions": "10x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "2668591e-db74-47e3-bc56-628212e35ed5",
                         "repetitions": "10x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "0a8c9eb1-c7b8-4d04-bec2-ec2b567df1c5",
                         "repetitions": "10x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "8aec1dcb-00f8-4b3e-880f-6183443d4a23",
                         "repetitions": "10x",
                         "weight": "20",
                         "rest": 1
@@ -230,25 +273,30 @@
                 ]
             },
             {
+                "id": "31deb8f9-2f63-4b4d-992a-0cd7c164b83e",
                 "title": "Leg 45",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "95578abe-e15e-4c49-8f61-1d61b65b3c50",
                         "repetitions": "10x",
                         "weight": "40",
                         "rest": 1
                     },
                     {
+                        "id": "79e9238a-399d-4d59-9336-d4eab57a8239",
                         "repetitions": "10x",
                         "weight": "40",
                         "rest": 1
                     },
                     {
+                        "id": "ea4c6783-a42f-4dbd-8a07-cb7a26cae17f",
                         "repetitions": "8x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
+                        "id": "1b9e4df6-160b-4d1c-8d01-350c77eb801c",
                         "repetitions": "8x",
                         "weight": "60",
                         "rest": 1
@@ -256,25 +304,30 @@
                 ]
             },
             {
+                "id": "b2f37a23-58b4-4ea4-a694-f69cb8ba3951",
                 "title": "Cadeira Extensora Drop Set",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "d63dbe1e-cc93-46dc-a226-d9ba146ee89a",
                         "repetitions": "6+8x",
                         "weight": "40/30",
                         "rest": 1
                     },
                     {
+                        "id": "be52fe34-abb9-4a42-bbae-2f41eb0c5039",
                         "repetitions": "6+8x",
                         "weight": "40/30",
                         "rest": 1
                     },
                     {
+                        "id": "b243a518-ba7c-4544-96ba-2fe7a1c467e6",
                         "repetitions": "6+8x",
                         "weight": "40/30",
                         "rest": 1
                     },
                     {
+                        "id": "165d030d-1467-40dd-9c1b-cd254d01cd7d",
                         "repetitions": "6+8x",
                         "weight": "40/30",
                         "rest": 1
@@ -282,25 +335,30 @@
                 ]
             },
             {
+                "id": "aa698d77-5e70-4651-bde4-118223d4e9aa",
                 "title": "Afundo Step a Frente ",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "16028753-4bfb-4ce6-b780-9a6298fd8146",
                         "repetitions": "12x",
                         "weight": "5",
                         "rest": 1
                     },
                     {
+                        "id": "770026a1-b007-4c57-b050-9e4d03aa50b8",
                         "repetitions": "12x",
                         "weight": "5",
                         "rest": 1
                     },
                     {
+                        "id": "16318f6d-5e51-4499-aa90-60935511dd31",
                         "repetitions": "12x",
                         "weight": "5",
                         "rest": 1
                     },
                     {
+                        "id": "0b99084e-65fa-4795-81e9-af5203fa8239",
                         "repetitions": "12x",
                         "weight": "5",
                         "rest": 1
@@ -308,25 +366,30 @@
                 ]
             },
             {
+                "id": "7e292eed-5035-4db8-9194-523768127e91",
                 "title": "Cadeira Flexora",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "9f71389e-9463-4512-8f89-f80c70ef3a57",
                         "repetitions": "8(2t)+8x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "1c813679-edf6-46e8-82e0-1fea06e98a72",
                         "repetitions": "8(2t)+8x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "78bb783e-af19-4155-b003-325c9f6f9bf7",
                         "repetitions": "8(2t)+8x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "f8f35167-0937-4b02-b233-1d5c275ff1f5",
                         "repetitions": "8(2t)+8x",
                         "weight": "20",
                         "rest": 1
@@ -334,25 +397,30 @@
                 ]
             },
             {
+                "id": "f1341625-1099-4d7f-a9f1-fb2be5fa7e86",
                 "title": "Cadeira Abdutora",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "6746b334-f295-49cb-bf17-314e1ba9c7a3",
                         "repetitions": "15(3seg)x",
                         "weight": "32",
                         "rest": 1
                     },
                     {
+                        "id": "6bcbe6ee-8be1-41a9-a645-eaaf05b911b7",
                         "repetitions": "15(3seg)x",
                         "weight": "32",
                         "rest": 1
                     },
                     {
+                        "id": "3d5ed5fd-95a5-41dd-9c22-865c86bd924a",
                         "repetitions": "15(3seg)x",
                         "weight": "32",
                         "rest": 1
                     },
                     {
+                        "id": "2b7b6a51-575d-4e89-9c55-241a5fad80ac",
                         "repetitions": "15(3seg)x",
                         "weight": "32",
                         "rest": 1
@@ -360,20 +428,24 @@
                 ]
             },
             {
+                "id": "b20f8f7d-2803-497c-843b-b32257425533",
                 "title": "Elevação de Quadril Unilateral Solo",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "49147b0d-bac4-44ed-b521-39d729ec3754",
                         "repetitions": "12x",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "12989a1b-5c68-4c80-bf9e-6a4083fafa25",
                         "repetitions": "12x",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "1d8b00ee-4793-49d9-a346-f2dd95c0ae9d",
                         "repetitions": "12x",
                         "weight": "0",
                         "rest": 1
@@ -381,25 +453,30 @@
                 ]
             },
             {
+                "id": "93ec49fd-0557-4747-9220-ad7e1bf799e3",
                 "title": "Panturrilha Smith",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "7e99faaa-75cb-4e0e-96b5-1181d4ca7a25",
                         "repetitions": "8(2t)+8x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "3e178414-531d-44c7-8a4b-4b36a4158cb6",
                         "repetitions": "8(2t)+8x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "ed4a4566-878a-42db-854a-f1a59e7fdeee",
                         "repetitions": "8(2t)+8x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "7c5467d9-d232-4fb4-aefe-98133eea1799",
                         "repetitions": "8(2t)+8x",
                         "weight": "15",
                         "rest": 1
@@ -409,29 +486,35 @@
         ]
     },
     {
+        "id": "b8368d04-a26c-455a-9df4-5d5fcebd6655",
         "title": "Peito e Tríceps",
         "weekDays": [3, 6],
         "workouts": [
             {
+                "id": "e68079da-cfd7-4cb3-a257-4d7757ab7c5c",
                 "title": "Canivete Unilateral",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "e27fb2eb-52a9-475d-88c1-9b103385ba45",
                         "repetitions": "10x",
                         "weight": "14",
                         "rest": 1
                     },
                     {
+                        "id": "2f04ddd9-9ce2-430b-ad1c-6a481d3bdaf1",
                         "repetitions": "10x",
                         "weight": "18",
                         "rest": 1
                     },
                     {
+                        "id": "9b3cf52f-8527-4770-9a2b-2eb1f9052a52",
                         "repetitions": "8x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "228a17a4-eaa8-4390-a3b5-d448d40bf3b1",
                         "repetitions": "8x",
                         "weight": "22",
                         "rest": 1
@@ -439,20 +522,24 @@
                 ]
             },
             {
+                "id": "b1f624e1-44c9-44e6-8740-c9873d568b9a",
                 "title": "Supino Inclinado Com Barra",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "7684d555-4eb4-4bc1-9293-e423115679dc",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "3f39e4e6-5cb9-4697-99f1-5377f3eae5b3",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "3af9cdb5-be4c-4b86-8b94-cd0612acb192",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
@@ -460,25 +547,30 @@
                 ]
             },
             {
+                "id": "ca26bfbf-0938-44de-b4e7-971257be0894",
                 "title": "Crucifixo No Voador",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "52e256c9-b6ed-4909-bbe8-b24085aebfa4",
                         "repetitions": "8(l)+8x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
+                        "id": "ffe745bf-7738-43ed-8820-25e781389dcd",
                         "repetitions": "8(l)+8x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
+                        "id": "6425f7ba-55d7-4c12-ae6d-eb655018924d",
                         "repetitions": "8(l)+8x",
                         "weight": "50",
                         "rest": 1
                     },
                     {
+                        "id": "cfd183e4-6204-4b7d-98ae-9b475757ec08",
                         "repetitions": "8(l)+8x",
                         "weight": "50",
                         "rest": 1
@@ -486,25 +578,30 @@
                 ]
             },
             {
+                "id": "732530ba-8516-483c-9092-f3e78bacc48d",
                 "title": "Desenvolvimento Articulado",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "2cb3337d-9cd9-4929-9f3f-c6a02306032e",
                         "repetitions": "10x",
                         "weight": "10",
                         "rest": 1
                     },
                     {
+                        "id": "01580ab6-dddc-4b75-beeb-20de5631deb0",
                         "repetitions": "10x",
                         "weight": "13",
                         "rest": 1
                     },
                     {
+                        "id": "904dac36-6c03-4cce-9151-812e1f4d4b53",
                         "repetitions": "8x",
                         "weight": "15",
                         "rest": 1
                     },
                     {
+                        "id": "8d2e3415-bb39-4c64-a29d-6c07be1cd523",
                         "repetitions": "6x",
                         "weight": "20",
                         "rest": 1
@@ -512,20 +609,24 @@
                 ]
             },
             {
+                "id": "d143ea27-181e-4054-9540-f69001c738f1",
                 "title": "Elevação Lateral Drop Set",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "b8679c22-842c-457f-8c8e-11c3b02cd768",
                         "repetitions": "6+10x",
                         "weight": "8-6",
                         "rest": 1
                     },
                     {
+                        "id": "64b99d31-99d4-43ae-9fcb-ed748123bdc0",
                         "repetitions": "6+10x",
                         "weight": "8-6",
                         "rest": 1
                     },
                     {
+                        "id": "800a7c02-ff3f-40ce-aec1-d9ce336eafd6",
                         "repetitions": "6+10x",
                         "weight": "8-6",
                         "rest": 1
@@ -533,25 +634,30 @@
                 ]
             },
             {
+                "id": "1b30040c-688d-4894-8dce-fa96b217eb02",
                 "title": "Triceps Inverso",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "1d8682cf-90c3-4ac3-abbc-8b8b7c3ac7f4",
                         "repetitions": "8(2s)+8x",
                         "weight": "30",
                         "rest": 1
                     },
                     {
+                        "id": "c3d4df20-83d5-4687-9d43-2542cb1d129c",
                         "repetitions": "8(2s)+8x",
                         "weight": "30",
                         "rest": 1
                     },
                     {
+                        "id": "a61a555d-065e-4f32-81ee-b4777d548eef",
                         "repetitions": "8(2s)+8x",
                         "weight": "30",
                         "rest": 1
                     },
                     {
+                        "id": "bdd704d0-88ba-466c-ae0f-377e10e3a705",
                         "repetitions": "8(2s)+8x",
                         "weight": "30",
                         "rest": 1
@@ -559,20 +665,24 @@
                 ]
             },
             {
+                "id": "f810acdb-b646-423c-8ef5-8e3760ebdd58",
                 "title": "Triceps Corda Unilatearl",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "9099ee0f-90aa-4a24-aedc-f0a516b74178",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "75f9f336-23cd-463e-80ec-43a52320d999",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "92b85214-ea29-48fa-91fe-8c4f65276385",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
@@ -580,20 +690,24 @@
                 ]
             },
             {
+                "id": "c79d5aaa-dfb3-40ca-8f54-3fe3941621dc",
                 "title": "Triceps Frances Duplo",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "891552ba-7cb6-4f50-a52b-79871659a374",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "eeb9bacc-931e-4996-8c5a-21a9c6edf56a",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
                     },
                     {
+                        "id": "a615c3d6-4ef1-4cfc-b1a0-59bcc4d863ed",
                         "repetitions": "12x",
                         "weight": "20",
                         "rest": 1
@@ -603,24 +717,29 @@
         ]
     },
     {
+        "id": "1b05e434-95d4-41b9-86bf-38c1541580e8",
         "title": "Abdominal",
         "weekDays": [1, 2, 3, 4, 5, 6],
         "workouts": [
             {
+                "id": "92b32bbf-dc99-4f48-9f8e-81cd9d331757",
                 "title": "Prancha Frontal",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "d245a067-4d37-43b8-ab08-8694e86aee2a",
                         "repetitions": "1min",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "05a78df4-fc9e-4e48-ac17-062d8ce644eb",
                         "repetitions": "1min",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "e98573ff-5fea-4f44-a46a-c97d92cfae92",
                         "repetitions": "1min",
                         "weight": "0",
                         "rest": 1
@@ -628,20 +747,24 @@
                 ]
             },
             {
+                "id": "86a45ede-95f6-4a0f-9159-a42257dc04f8",
                 "title": "Infra Paralela",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "0f3c3445-ed20-43e1-b309-62e8c5f38627",
                         "repetitions": "20x",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "a4a10fa2-2380-490d-8550-723c655d5fcf",
                         "repetitions": "20x",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "716d62b8-01c4-410e-b7fa-670c06b71327",
                         "repetitions": "20x",
                         "weight": "0",
                         "rest": 1
@@ -649,20 +772,24 @@
                 ]
             },
             {
+                "id": "000522d8-efee-4403-b468-2fb7d6cb68a4",
                 "title": "Canicete Unilateral",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "eb74ec7f-2921-4005-b036-1539cecfd0d5",
                         "repetitions": "15x",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "88dbe3c6-5624-47c0-9ab4-14dd31694217",
                         "repetitions": "15x",
                         "weight": "0",
                         "rest": 1
                     },
                     {
+                        "id": "9d56fb75-e95c-4b8c-ac71-5de2ec13e252",
                         "repetitions": "15x",
                         "weight": "0",
                         "rest": 1
@@ -672,23 +799,28 @@
         ]
     },
     {
+        "id": "1d078d05-21c9-4ca5-8c2f-cb5bf91f09bd",
         "title": "Cardio",
         "weekDays": [1, 2, 3, 4, 5, 6],
         "workouts": [
             {
+                "id": "17a5580a-b2bc-4e60-87fb-c6488927147c",
                 "title": "Bicicleta",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "4511b0cb-cbc5-4c94-8e31-e121e65f6843",
                         "repetitions": "15min"
                     }
                 ]
             },
             {
+                "id": "b96b86e2-03ed-4434-bad2-85e5433236e1",
                 "title": "Corrida",
                 "image": "https://res.cloudinary.com/dko9uxtdi/image/upload/v1701719220/BodyBooster/Workouts/2368_sp0z2w.gif",
                 "sets": [
                     {
+                        "id": "1603f0d4-2d5e-4983-9c08-41d3027452f5",
                         "repetitions": "15min"
                     }
                 ]

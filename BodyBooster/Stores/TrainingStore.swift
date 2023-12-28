@@ -13,7 +13,7 @@ class TrainingStore {
     
     // MARK: - Public Variables
     
-    private(set) var data = DataState<[Training], Error>.loaded([])
+    private(set) var data = DataState<[Training], Error>.loaded(fakeTrainings)
     
     // MARK: - Private Variables
     
@@ -85,9 +85,7 @@ class TrainingStore {
 extension TrainingStore {
     
     static var preview: TrainingStore {
-        let store = TrainingStore(service: TrainingServiceLocal())
-        Task { try? await store.loadTrainings() }
-        return store
+        TrainingStore(service: TrainingServiceLocal())
     }
     
 }
