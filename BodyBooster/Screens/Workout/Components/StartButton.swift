@@ -26,6 +26,14 @@ struct StartButton: View {
         isCompleted ? "Reiniciar treino" : isStarted ? "Em treino" : "Iniciar Treino"
     }
     
+    private var scale: Double {
+        !isStarted ? 1 : 0.9
+    }
+    
+    private var padding: Double {
+        !isStarted ? 8 : 0
+    }
+    
     var body: some View {
         TouchableButton(content: {
             Rectangle()
@@ -38,6 +46,8 @@ struct StartButton: View {
                 }
                 .rounded()
         }, action: action)
+        .padding(.bottom, padding)
+        .scaleEffect(scale)
         .disabled(isStarted)
     }
 }

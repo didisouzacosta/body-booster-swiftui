@@ -73,7 +73,7 @@ struct WorkoutScreen: View {
                     }
                 }
                 .minimalSection()
-                .padding(.vertical, -2)
+                .padding(.vertical, -6)
             }
             .minimalList()
             .navigationTitle("\(0) de \(workout.sets.count)")
@@ -107,6 +107,8 @@ struct WorkoutScreen: View {
         
         if let nextSet = sets[safe: index + 1] {
             updateToDoing(nextSet)
+        } else {
+            dismiss()
         }
     }
     

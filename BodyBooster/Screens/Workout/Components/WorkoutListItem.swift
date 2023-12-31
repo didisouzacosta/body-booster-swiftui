@@ -16,6 +16,28 @@ struct WorkoutListItem: View {
         self.set.status != .doing
     }
     
+    private var scale: Double {
+        self.set.status == .doing ? 1 : 0.9
+    }
+    
+    private var padding: Double {
+        self.set.status == .doing ? 4 : 0
+    }
+    
+    private var background: Color {
+        switch self.set.status {
+        case .doing: Color.patternRed
+        case .toDo, .done: .gray
+        }
+    }
+    
+    private var foregroundColor: Color {
+        switch self.set.status {
+        case .doing: .white
+        case .toDo, .done: Color.primary
+        }
+    }
+    
     var body: some View {
         TouchableButton(content: {
             HStack(spacing: 24) {
@@ -41,10 +63,12 @@ struct WorkoutListItem: View {
                 Spacer()
             }
             .padding(16)
-            .background(Color.patternRed)
-            .foregroundColor(.white)
+            .background(background)
+            .foregroundColor(foregroundColor)
             .rounded()
         }, action: action)
+        .padding(.vertical, padding)
+        .scaleEffect(scale)
         .disabled(disabled)
     }
 }
