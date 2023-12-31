@@ -14,7 +14,7 @@ struct TrainingScreen: View {
     let identifier: any Identifiable<UUID>
     
     private var training: Training? {
-        try? trainingStore.getTraining(from: identifier)
+        try? trainingStore.getTraining(with: identifier)
     }
     
     private var title: String {

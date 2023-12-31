@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct WorkoutListItem: View {
-    var set: Workout.Set
+    
+    let set: Workout.Set
     let action: () -> Void
     
-    private var scale: CGFloat {
-        self.set.status == .toDo ? 0.9 : 1
+    private var disabled: Bool {
+        self.set.status != .doing
     }
     
     var body: some View {
@@ -44,10 +45,7 @@ struct WorkoutListItem: View {
             .foregroundColor(.white)
             .rounded()
         }, action: action)
-        .padding(-4)
-        .scaleEffect(scale)
-//        .opacity(0.6)
-        .animation(.easeIn, value: scale)
+        .disabled(disabled)
     }
 }
 

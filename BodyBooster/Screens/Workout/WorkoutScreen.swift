@@ -16,7 +16,19 @@ struct WorkoutScreen: View {
     let identifier: any Identifiable<UUID>
     
     private var workout: Workout? {
-        try? trainingStore.getWorkout(from: identifier)
+        try? trainingStore.getWorkout(with: identifier)
+    }
+    
+    private var sets: [Workout.Set] {
+        workout?.sets ?? []
+    }
+    
+    private var isStarted: Bool {
+        sets.contains { $0.status == .doing }
+    }
+    
+    private var isCompleted: Bool {
+        sets.allSatisfy { $0.status == .done }
     }
     
     var body: some View {
@@ -51,10 +63,12 @@ struct WorkoutScreen: View {
                 .minimalSection()
                 
                 Section {
-                    StartButton() {}
-                    ForEach(workout.sets) { set in
+                    StartButton(isStarted, isCompleted: isCompleted) {
+                        startWorkout()
+                    }
+                    ForEach(sets.enumaredArray(), id: \.element) { index, set in
                         WorkoutListItem(set: set) {
-                            updateToDoing(set: set)
+                            setAction(set, index: index)
                         }
                     }
                 }
@@ -78,12 +92,34 @@ struct WorkoutScreen: View {
     
     // MARK: - Private Methods
     
-    private func updateToDoing(set: Workout.Set) {
-        do {
-            try trainingStore.update(status: .doing, in: set)
-        } catch {
-            print(error)
+    private func startWorkout() {
+        sets.enumerated().forEach { index, set in
+            if index == 0 {
+                updateToDoing(set)
+            } else {
+                updateToToDo(set)
+            }
         }
+    }
+    
+    private func setAction(_ set: Workout.Set, index: Int) {
+        updateToDone(set)
+        
+        if let nextSet = sets[safe: index + 1] {
+            updateToDoing(nextSet)
+        }
+    }
+    
+    private func updateToToDo(_ set: Workout.Set) {
+        try? trainingStore.update(status: .toDo, in: set)
+    }
+    
+    private func updateToDoing(_ set: Workout.Set) {
+        try? trainingStore.update(status: .doing, in: set)
+    }
+    
+    private func updateToDone(_ set: Workout.Set) {
+        try? trainingStore.update(status: .done, in: set)
     }
 }
 
