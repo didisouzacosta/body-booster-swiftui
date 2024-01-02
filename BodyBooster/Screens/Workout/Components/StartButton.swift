@@ -12,26 +12,11 @@ struct StartButton: View {
     let isCompleted: Bool
     let action: () -> Void
     
-    init(
-        _ isStarted: Bool,
-        isCompleted: Bool,
-        action: @escaping () -> Void
-    ) {
-        self.isStarted = isStarted
-        self.isCompleted = isCompleted
-        self.action = action
-    }
+    @State private var scale: Double = 1
+    @State private var padding: Double = 8
     
     private var title: String {
         isCompleted ? "Reiniciar treino" : isStarted ? "Em treino" : "Iniciar Treino"
-    }
-    
-    private var scale: Double {
-        !isStarted ? 1 : 0.9
-    }
-    
-    private var padding: Double {
-        !isStarted ? 8 : 0
     }
     
     var body: some View {
@@ -46,10 +31,29 @@ struct StartButton: View {
                 }
                 .rounded()
         }, action: action)
-        .padding(.bottom, padding)
-        .scaleEffect(scale)
         .disabled(isStarted)
+        .padding(.vertical, padding)
+        .scaleEffect(scale)
+        .onChange(of: isStarted, initial: true) { _, newValue in
+            DispatchQueue.main.async {
+                withAnimation(.easeOut) {
+                    scale = !newValue ? 1 : 0.9
+                    padding = !newValue ? 8 : 0
+                }
+            }
+        }
     }
+    
+    init(
+        _ isStarted: Bool,
+        isCompleted: Bool,
+        action: @escaping () -> Void
+    ) {
+        self.isStarted = isStarted
+        self.isCompleted = isCompleted
+        self.action = action
+    }
+    
 }
 
 #Preview {

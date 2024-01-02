@@ -12,23 +12,13 @@ struct WorkoutListItem: View {
     let set: Workout.Set
     let action: () -> Void
     
+    @State private var scale: Double = 0.9
+    @State private var padding: Double = 0
+    @State private var opacity: Double = 1
+    @State private var background: Color = .gray
+    
     private var disabled: Bool {
         self.set.status != .doing
-    }
-    
-    private var scale: Double {
-        self.set.status == .doing ? 1 : 0.9
-    }
-    
-    private var padding: Double {
-        self.set.status == .doing ? 4 : 0
-    }
-    
-    private var background: Color {
-        switch self.set.status {
-        case .doing: Color.patternRed
-        case .toDo, .done: .gray
-        }
     }
     
     private var foregroundColor: Color {
@@ -67,10 +57,22 @@ struct WorkoutListItem: View {
             .foregroundColor(foregroundColor)
             .rounded()
         }, action: action)
-        .padding(.vertical, padding)
-        .scaleEffect(scale)
         .disabled(disabled)
+        .scaleEffect(scale)
+        .opacity(opacity)
+        .padding(.vertical, padding)
+        .onChange(of: set.status, initial: true) { _, newValue in
+            DispatchQueue.main.async {
+                withAnimation(.easeOut) {
+                    scale = newValue == .doing ? 1 : 0.9
+                    opacity = newValue == .done ? 0.6 : 1
+                    padding = newValue == .doing ? 8 : 0
+                    background = newValue == .doing ? Color.patternRed : .gray
+                }
+            }
+        }
     }
+    
 }
 
 #Preview {

@@ -16,8 +16,8 @@ struct Navigator<Content: View, Router: RouterRepresentable>: View {
         NavigationStack(path: $router.path) {
             content()
                 .navigationDestination(for: Router.Route.self) { $0.content() }
-                .sheet(item: $router.sheet) { $0.content() }
         }
+        .sheet(item: $router.sheet) { $0.content() }
     }
     
     // MARK: - Life Cicle

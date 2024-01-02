@@ -33,8 +33,8 @@ struct WorkoutScreen: View {
     
     var body: some View {
         if let workout {
-            List {
-                Section {
+            ScrollView {
+                LazyVStack {
                     VStack(spacing: 16) {
                         Rectangle()
                             .fill(.white)
@@ -44,10 +44,10 @@ struct WorkoutScreen: View {
                                     .aspectRatio(contentMode: .fit)
                                     .padding()
                             }
-                            .aspectRatio(1.6, contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                            .aspectRatio(1.6, contentMode: .fill)
                             .rounded()
                             .clipped()
-                        
+
                         HStack {
                             Spacer()
                             VStack(alignment: .center) {
@@ -59,23 +59,22 @@ struct WorkoutScreen: View {
                             Spacer()
                         }
                     }
-                }
-                .minimalSection()
-                
-                Section {
+                    .padding(.bottom, 8)
+                    
                     StartButton(isStarted, isCompleted: isCompleted) {
                         startWorkout()
                     }
-                    ForEach(sets.enumaredArray(), id: \.element) { index, set in
+                    
+                    ForEach(sets.enumaredArray(), id: \.element.id) { index, set in
                         WorkoutListItem(set: set) {
                             setAction(set, index: index)
                         }
                     }
+                    .padding(.vertical, -4)
                 }
-                .minimalSection()
-                .padding(.vertical, -6)
+                .padding()
             }
-            .minimalList()
+            .scrollIndicators(.hidden)
             .navigationTitle("\(0) de \(workout.sets.count)")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
