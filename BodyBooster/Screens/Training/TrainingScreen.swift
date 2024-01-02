@@ -11,7 +11,7 @@ struct TrainingScreen: View {
     @Environment(TrainingStore.self) private var trainingStore
     @Environment(MainRouter.self) private var router
     
-    let identifier: any Identifiable<UUID>
+    let identifier: any Identifier
     
     private var training: Training? {
         try? trainingStore.getTraining(with: identifier)

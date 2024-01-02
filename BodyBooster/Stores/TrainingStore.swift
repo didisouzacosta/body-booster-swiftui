@@ -8,6 +8,8 @@
 import SwiftUI
 import Combine
 
+typealias Identifier = Identifiable<UUID>
+
 @Observable
 class TrainingStore {
     
@@ -40,14 +42,19 @@ class TrainingStore {
         data = .loaded(trainings)
     }
     
-    func getTraining(with identifier: some Identifiable<UUID>) throws -> Training? {
+    func getTraining(with identifier: some Identifier) throws -> Training? {
         (try data.value ?? []).first { $0.id == identifier.id }
     }
     
-    func getWorkout(with identifier: some Identifiable<UUID>) throws -> Workout? {
+    func getWorkout(with identifier: some Identifier) throws -> Workout? {
         (try data.value ?? [])
             .flatMap { $0.workouts }
             .first { $0.id == identifier.id }
+    }
+    
+    func getWorkoutSiblins(from identifier: some Identifier) throws -> [Workout] {
+        let training = (try data.value ?? []).first { $0.workouts.contains { $0.id == identifier.id } }
+        return training?.workouts ?? []
     }
     
     // MARK: Private Methods

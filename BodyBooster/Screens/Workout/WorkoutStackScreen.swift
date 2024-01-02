@@ -10,7 +10,7 @@ import SwiftUI
 struct WorkoutStackScreen: View {
     @Environment(TrainingStore.self) private var trainingStore
     
-    let identifier: any Identifiable<UUID>
+    let identifier: any Identifier
     
     private let router = WorkoutRouter()
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Workout: Identifiable, Codable, Hashable {
+struct Workout: Codable, Hashable, Identifiable {
     let id: UUID
     var title: String
     let image: URL

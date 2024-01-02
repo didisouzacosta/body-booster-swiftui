@@ -7,12 +7,30 @@
 
 import SwiftUI
 
-struct ModelView: View {
+struct ModelView<Content: View>: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    
+    let content: () -> Content
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        content()
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Fechar") {
+                        dismiss()
+                    }
+                }
+            }
     }
+    
+    init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content
+    }
+    
 }
 
 #Preview {
-    ModelView()
+    ModelView(content: { Text("Adriano") })
 }
