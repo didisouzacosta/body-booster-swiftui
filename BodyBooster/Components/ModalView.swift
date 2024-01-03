@@ -1,5 +1,5 @@
 //
-//  ModelView.swift
+//  ModalView.swift
 //  BodyBooster
 //
 //  Created by ProDoctor on 02/01/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ModelView<Content: View>: View {
+struct ModalView<Content: View>: View {
     
     @Environment(\.dismiss) private var dismiss
     
@@ -32,5 +32,5 @@ struct ModelView<Content: View>: View {
 }
 
 #Preview {
-    ModelView(content: { Text("Adriano") })
+    ModalView(content: { Text("Adriano") })
 }

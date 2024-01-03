@@ -28,7 +28,7 @@
 		D54F7E282B322316005A2AD7 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54F7E272B322316005A2AD7 /* HomeList.swift */; };
 		D55DB33C2B30BDF000E13296 /* TouchableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55DB33B2B30BDF000E13296 /* TouchableButton.swift */; };
 		D55F43B92B3DBD4600B14EC8 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55F43B82B3DBD4600B14EC8 /* Collection+Extension.swift */; };
-		D567DFBE2B44B1BD000B201E /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D567DFBD2B44B1BC000B201E /* ModelView.swift */; };
+		D567DFBE2B44B1BD000B201E /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D567DFBD2B44B1BC000B201E /* ModalView.swift */; };
 		D58EA9A42B3B72550024BF5D /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EA9A32B3B72550024BF5D /* StartButton.swift */; };
 		D5A49F702B2EDAAB00AB02F9 /* BodyBoosterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A49F6F2B2EDAAB00AB02F9 /* BodyBoosterApp.swift */; };
 		D5A49F722B2EDAAB00AB02F9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A49F712B2EDAAB00AB02F9 /* HomeScreen.swift */; };
@@ -94,7 +94,7 @@
 		D54F7E272B322316005A2AD7 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		D55DB33B2B30BDF000E13296 /* TouchableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableButton.swift; sourceTree = "<group>"; };
 		D55F43B82B3DBD4600B14EC8 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
-		D567DFBD2B44B1BC000B201E /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		D567DFBD2B44B1BC000B201E /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		D58EA9A32B3B72550024BF5D /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		D5A49F6C2B2EDAAB00AB02F9 /* BodyBooster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBooster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A49F6F2B2EDAAB00AB02F9 /* BodyBoosterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBoosterApp.swift; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 				D55DB33B2B30BDF000E13296 /* TouchableButton.swift */,
 				D54F7E152B31C6EC005A2AD7 /* WeekDays.swift */,
 				D54F7E232B321D50005A2AD7 /* DataStateView.swift */,
-				D567DFBD2B44B1BC000B201E /* ModelView.swift */,
+				D567DFBD2B44B1BC000B201E /* ModalView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -549,7 +549,7 @@
 				D54F7E142B31C279005A2AD7 /* TrainingHeader.swift in Sources */,
 				D55F43B92B3DBD4600B14EC8 /* Collection+Extension.swift in Sources */,
 				D5EA53032B34602B00A84FAC /* MainRoute.swift in Sources */,
-				D567DFBE2B44B1BD000B201E /* ModelView.swift in Sources */,
+				D567DFBE2B44B1BD000B201E /* ModalView.swift in Sources */,
 				D5DC17312B30793C00CE3773 /* WaterCard.swift in Sources */,
 				D5BBE95A2B2EE00800A2B11A /* UserStore.swift in Sources */,
 				D539CD482B3236C10084E50E /* ViewFirstAppearModifier.swift in Sources */,
