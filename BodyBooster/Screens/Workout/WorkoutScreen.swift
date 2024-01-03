@@ -35,7 +35,7 @@ struct WorkoutScreen: View {
                         Rectangle()
                             .fill(.green)
                             .opacity(stepOpacity(id))
-                            .frame(width: stepWidth(id), height: 4)
+                            .frame(minWidth: 0, maxWidth: stepWidth(id), maxHeight: 4)
                             .rounded()
                     }
                 }
@@ -80,7 +80,7 @@ struct WorkoutScreen: View {
     }
     
     private func stepWidth(_ id: UUID) -> CGFloat {
-        id == tabSelection ? 60 : .infinity
+        id == tabSelection ? .infinity : 30
     }
     
     private func stepOpacity(_ id: UUID) -> CGFloat {

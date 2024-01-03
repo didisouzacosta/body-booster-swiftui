@@ -24,4 +24,5 @@ struct MainStackScreen: View {
 #Preview {
     MainStackScreen()
         .environment(TrainingStore.preview)
+        .preferredColorScheme(.dark)
 }
