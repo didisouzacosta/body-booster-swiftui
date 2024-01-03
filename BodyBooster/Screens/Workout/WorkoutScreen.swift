@@ -16,15 +16,27 @@ struct WorkoutScreen: View {
     
     let identifier: any Identifier
     
-    @State private var tabSelection: UUID
+    @State private var selectedItem: UUID
     
     private var workouts: [Workout] {
         (try? trainingStore.getWorkoutSiblins(from: identifier)) ?? []
     }
     
+    private var currentIndex: Int {
+        workouts.firstIndex { $0.id == selectedItem } ?? 0
+    }
+    
+    private var total: Int {
+        workouts.count
+    }
+    
+    private var title: String {
+        "\(currentIndex + 1) de \(total)"
+    }
+    
     init(identifier: any Identifier) {
         self.identifier = identifier
-        _tabSelection = State(wrappedValue: identifier.id)
+        _selectedItem = State(wrappedValue: identifier.id)
     }
     
     var body: some View {
@@ -37,16 +49,19 @@ struct WorkoutScreen: View {
                             .opacity(stepOpacity(id))
                             .frame(minWidth: 0, maxWidth: stepWidth(id), maxHeight: 4)
                             .rounded()
+                            .onTapGesture {
+                                selectedItem = id
+                            }
                     }
                 }
                 .safeAreaPadding(.horizontal)
-                .padding(.horizontal)
+                .padding(.horizontal, 32)
                 .padding(.vertical, 4)
-                .animation(.easeInOut, value: tabSelection)
+                .animation(.easeInOut, value: selectedItem)
                 
                 GeometryReader { geometry in
                     ScrollView(.init()) {
-                        TabView(selection: $tabSelection) {
+                        TabView(selection: $selectedItem) {
                             ForEach(workouts.enumaredArray(), id: \.element.id) { index, workout in
                                 ScrollView {
                                     SetScreen(workout: workout) {
@@ -60,31 +75,32 @@ struct WorkoutScreen: View {
                             }
                         }
                         .tabViewStyle(.page(indexDisplayMode: .never))
-                        .animation(.easeOut(duration: 0.2), value: tabSelection)
+                        .animation(.easeInOut, value: selectedItem)
                     }
                     .scrollIndicators(.hidden)
                     .ignoresSafeArea(.container, edges: .bottom)
                 }
             }
         }
+        .navigationTitle(title)
     }
     
     // MARK: - Private Methods
     
     private func next(position: Int) {
         if let next = workouts[safe: position]?.id {
-            tabSelection = next
+            selectedItem = next
         } else {
             dismiss()
         }
     }
     
     private func stepWidth(_ id: UUID) -> CGFloat {
-        id == tabSelection ? .infinity : 30
+        id == selectedItem ? .infinity : 24
     }
     
     private func stepOpacity(_ id: UUID) -> CGFloat {
-        id == tabSelection ? 1 : 0.4
+        id == selectedItem ? 1 : 0.4
     }
     
 }
@@ -94,11 +110,4 @@ struct WorkoutScreen: View {
         .environment(TrainingStore.preview)
         .environment(WorkoutRouter())
         .preferredColorScheme(.dark)
-}
-
-#Preview {
-    WorkoutScreen(identifier: fakeTrainings[0].workouts[0])
-        .environment(TrainingStore.preview)
-        .environment(WorkoutRouter())
-        .preferredColorScheme(.light)
 }
